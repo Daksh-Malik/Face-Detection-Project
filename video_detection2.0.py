@@ -6,7 +6,10 @@ face_classifier = cv2.CascadeClassifier(
 smileCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_smile.xml')
 
 #accessing webcam (0 is webcam)
-video_capture = cv2.VideoCapture(0)
+# video_capture = cv2.VideoCapture(0)
+
+#accessing phone camera 
+video_capture = cv2.VideoCapture(1)
 
 #defining a function to detect image from a particular video frame
 def detect_bounding_box(vid):
